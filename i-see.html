@@ -345,7 +345,7 @@
   }
   .story-translate .line{display:block;}
   .story-ipa{color:#7a6a9c; font-weight:400; font-size:0.88em; font-style:italic; font-family:'Nunito',sans-serif;}
-  .pinyin{color:#9a8d7c; font-weight:600; font-size:0.82em;}
+  .pinyin{color:#9a8d7c; font-weight:600; font-size:0.82em; display:block;}
   .story-vi-helper{
     font-size:0.85rem;
     color:#9a8d7c;
@@ -627,7 +627,7 @@ const STORY = [{"img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA
 
 const VOCAB_EN = [{"w": "I see a…", "ipa": "/aɪ siː ə/", "m": "Mình nhìn thấy một…"}, {"w": "rock", "ipa": "/rɒk/", "m": "tảng đá"}, {"w": "ant", "ipa": "/ænt/", "m": "con kiến"}, {"w": "flower", "ipa": "/ˈflaʊər/", "m": "bông hoa"}, {"w": "butterfly", "ipa": "/ˈbʌtərflaɪ/", "m": "con bướm"}, {"w": "bee", "ipa": "/biː/", "m": "con ong"}, {"w": "tree", "ipa": "/triː/", "m": "cái cây"}, {"w": "cat", "ipa": "/kæt/", "m": "con mèo"}, {"w": "run", "ipa": "/rʌn/", "m": "chạy"}, {"w": "Oh, run!", "ipa": "/oʊ rʌn/", "m": "Ôi, chạy thôi!"}];
 
-const VOCAB_ZH = [{"hz": "我看到", "py": "wǒ kàndào", "m": "I see", "vi": "Mình nhìn thấy"}, {"hz": "石头", "py": "shítou", "m": "rock", "vi": "tảng đá"}, {"hz": "蚂蚁", "py": "mǎyǐ", "m": "ant", "vi": "con kiến"}, {"hz": "花", "py": "huā", "m": "flower", "vi": "bông hoa"}, {"hz": "蝴蝶", "py": "húdié", "m": "butterfly", "vi": "con bướm"}, {"hz": "蜜蜂", "py": "mìfēng", "m": "bee", "vi": "con ong"}, {"hz": "树", "py": "shù", "m": "tree", "vi": "cái cây"}, {"hz": "猫", "py": "māo", "m": "cat", "vi": "con mèo"}, {"hz": "跑", "py": "pǎo", "m": "run", "vi": "chạy"}, {"hz": "快跑！", "py": "kuài pǎo!", "m": "Run!", "vi": "Chạy thôi!"}];
+const VOCAB_ZH = [{"hz": "我看到", "py": "wǒ kàndào", "m": "I see", "vi": "Mình nhìn thấy"}, {"hz": "一块石头", "py": "yī kuài shítou", "m": "rock", "vi": "tảng đá"}, {"hz": "一只蚂蚁", "py": "yī zhī mǎyǐ", "m": "ant", "vi": "con kiến"}, {"hz": "一朵花", "py": "yī duǒ huā", "m": "flower", "vi": "bông hoa"}, {"hz": "一只蝴蝶", "py": "yī zhī húdié", "m": "butterfly", "vi": "con bướm"}, {"hz": "一只蜜蜂", "py": "yī zhī mìfēng", "m": "bee", "vi": "con ong"}, {"hz": "一棵树", "py": "yī kē shù", "m": "tree", "vi": "cái cây"}, {"hz": "一只猫", "py": "yī zhī māo", "m": "cat", "vi": "con mèo"}, {"hz": "跑", "py": "pǎo", "m": "run", "vi": "chạy"}, {"hz": "快跑！", "py": "kuài pǎo!", "m": "Run!", "vi": "Chạy thôi!"}];
 
 /* ================== ELEVENLABS AUDIO ================== */
 const AUDIO_BASE = 'https://audio-l1-i-see.sunnyenglish.workers.dev/';
@@ -657,13 +657,13 @@ const EN_STORY_AUDIO = {
 
 const ZH_VOCAB_AUDIO = {
   "我看到": AUDIO_BASE + 'zh_vocab_01.mp3',
-  "石头": AUDIO_BASE + 'zh_vocab_02.mp3',
-  "蚂蚁": AUDIO_BASE + 'zh_vocab_03.mp3',
-  "花": AUDIO_BASE + 'zh_vocab_04.mp3',
-  "蝴蝶": AUDIO_BASE + 'zh_vocab_05.mp3',
-  "蜜蜂": AUDIO_BASE + 'zh_vocab_06.mp3',
-  "树": AUDIO_BASE + 'zh_vocab_07.mp3',
-  "猫": AUDIO_BASE + 'zh_vocab_08.mp3',
+  "一块石头": AUDIO_BASE + 'zh_vocab_02.mp3',
+  "一只蚂蚁": AUDIO_BASE + 'zh_vocab_03.mp3',
+  "一朵花": AUDIO_BASE + 'zh_vocab_04.mp3',
+  "一只蝴蝶": AUDIO_BASE + 'zh_vocab_05.mp3',
+  "一只蜜蜂": AUDIO_BASE + 'zh_vocab_06.mp3',
+  "一棵树": AUDIO_BASE + 'zh_vocab_07.mp3',
+  "一只猫": AUDIO_BASE + 'zh_vocab_08.mp3',
   "跑": AUDIO_BASE + 'zh_vocab_09.mp3',
   "快跑！": AUDIO_BASE + 'zh_vocab_10.mp3',
 };
